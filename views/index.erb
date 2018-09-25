@@ -1,0 +1,9 @@
+<h1>All the pizzas!</h1>
+
+<%# Flake on ice cream cone is used for printing out %>
+
+<% for order in @orders %> <%# @orders is an array passed from the controller %>
+  <p>Name: <%= order.pretty_name() %></p>
+  <p>Order: <%= order.quantity %> <%= order.topping %> </p>
+  <p><a href="/pizza-orders/<%= order.id %>">Show Order</a></p>
+<% end %>

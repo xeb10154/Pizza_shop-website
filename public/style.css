@@ -1,0 +1,96 @@
+
+body{
+  font-family: Martel;
+  justify-content: space-around;
+  text-align: center;
+}
+
+header {
+  background: #55d6aa;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 20px;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 24px;
+}
+
+nav a :hover {
+  color: white;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+form {
+  color: white;
+  font-size: 15px;
+}
+
+.yield {
+  color: white;
+  font-size: 60px;
+}
+
+.title{
+  color: white;
+  font-weight: 900;
+  font-size: 120px;
+}
+
+.subtitle{
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.background{
+  background-image: url("https://food-images.files.bbci.co.uk/food/recipes/alpine_pizza_32132_16x9.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* Fixed positon fills background with one image */
+  position: fixed;
+  }
+
+p {
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Note */
+/* Followed along a CSS tutorial on making a responsive nav bar */
+/* https://www.youtube.com/watch?v=FEmysQARWFU */
