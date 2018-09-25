@@ -1,14 +1,9 @@
 
 body{
   font-family: Martel;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
-
-header {
-  background: #55d6aa;
-}
-
 
 nav ul {
   margin: 0;
@@ -20,7 +15,6 @@ nav li {
   display: inline-block;
   margin: 20px;
   padding-top: 20px;
-  color: rgb(0, 0, 0);
 
   position: relative;
 }
@@ -56,11 +50,13 @@ nav a:hover::before {
 form {
   color: white;
   font-size: 15px;
+  font-weight: 700;
 }
 
 .yield {
   color: white;
   font-size: 60px;
+  position: relative;
 }
 
 .title{
@@ -72,7 +68,8 @@ form {
 .subtitle{
   color: white;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 42px;
+  padding-top: 10px;
 }
 
 .background{
@@ -82,13 +79,28 @@ form {
   width: 100%;
   /* Fixed positon fills background with one image */
   position: fixed;
-  }
+}
+
+.scroll {
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 15px;
+  background-position: center;
+  background-color: rgba(255,250,250,0.6);
+  width:320px;
+  height:auto;
+  position: relative;
+
+}
 
 p {
   color: white;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 1;
+  line-height: 0.75;
 }
 
 /* Note */
